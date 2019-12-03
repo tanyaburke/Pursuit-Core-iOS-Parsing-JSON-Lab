@@ -124,21 +124,48 @@
             </objects>
             <point key="canvasLocation" x="1366.6666666666667" y="-769.41964285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="eDq-uu-qgI">
             <objects>
-                <viewController id="3In-aM-2S2" sceneMemberID="viewController">
+                <viewController id="3In-aM-2S2" customClass="DetailViewController" customModule="ParsingJsonLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P8o-hq-i13">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zs-5J-kau">
+                                <rect key="frame" x="20" y="438" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a3-Y5-cTa">
+                                <rect key="frame" x="20" y="409.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8a3-Y5-cTa" firstAttribute="leading" secondItem="0CM-8U-xK1" secondAttribute="leading" constant="20" id="6fz-w4-D4p"/>
+                            <constraint firstItem="9Zs-5J-kau" firstAttribute="top" secondItem="8a3-Y5-cTa" secondAttribute="bottom" constant="8" id="SmD-wV-ciB"/>
+                            <constraint firstItem="9Zs-5J-kau" firstAttribute="centerX" secondItem="P8o-hq-i13" secondAttribute="centerX" id="nq3-Hb-epY"/>
+                            <constraint firstItem="0CM-8U-xK1" firstAttribute="trailing" secondItem="9Zs-5J-kau" secondAttribute="trailing" constant="20" id="sih-HH-UTu"/>
+                            <constraint firstItem="0CM-8U-xK1" firstAttribute="trailing" secondItem="8a3-Y5-cTa" secondAttribute="trailing" constant="20" id="wE9-oB-Un4"/>
+                            <constraint firstItem="9Zs-5J-kau" firstAttribute="leading" secondItem="0CM-8U-xK1" secondAttribute="leading" constant="20" id="yXl-Bm-u3A"/>
+                            <constraint firstItem="9Zs-5J-kau" firstAttribute="centerY" secondItem="P8o-hq-i13" secondAttribute="centerY" id="zO5-TR-Uhn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0CM-8U-xK1"/>
                     </view>
                     <navigationItem key="navigationItem" id="X3o-2N-3TD"/>
+                    <connections>
+                        <outlet property="desctiptionLabel" destination="8a3-Y5-cTa" id="17C-1d-gcM"/>
+                        <outlet property="tempLabel" destination="9Zs-5J-kau" id="nLf-w4-p4V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqz-YS-3xZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2186" y="-1471"/>
+            <point key="canvasLocation" x="2185.507246376812" y="-1471.2053571428571"/>
         </scene>
         <!--Color Detail View Controller-->
         <scene sceneID="aLB-cX-svp">

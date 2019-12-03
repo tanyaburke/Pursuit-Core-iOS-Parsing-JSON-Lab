@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E6EEC46239684FE0095A0CE /* randomUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E6EEC45239684FE0095A0CE /* randomUser.json */; };
+		2E6EEC48239685170095A0CE /* userStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6EEC47239685170095A0CE /* userStruct.swift */; };
+		2E6EEC4A2396855D0095A0CE /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6EEC492396855D0095A0CE /* UserDetailViewController.swift */; };
 		2E82AA332394B5D500316AC8 /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E82AA322394B5D500316AC8 /* color.json */; };
 		2E82AA352394B61E00316AC8 /* colorStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E82AA342394B61E00316AC8 /* colorStruct.swift */; };
 		2E82AA372394B8C200316AC8 /* ColorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E82AA362394B8C200316AC8 /* ColorDetailViewController.swift */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E6EEC45239684FE0095A0CE /* randomUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = randomUser.json; sourceTree = "<group>"; };
+		2E6EEC47239685170095A0CE /* userStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userStruct.swift; sourceTree = "<group>"; };
+		2E6EEC492396855D0095A0CE /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		2E82AA322394B5D500316AC8 /* color.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = color.json; sourceTree = "<group>"; };
 		2E82AA342394B61E00316AC8 /* colorStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorStruct.swift; sourceTree = "<group>"; };
 		2E82AA362394B8C200316AC8 /* ColorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +62,10 @@
 		2E82AA312394B43900316AC8 /* user */ = {
 			isa = PBXGroup;
 			children = (
+				2E6EEC45239684FE0095A0CE /* randomUser.json */,
+				2E6EEC47239685170095A0CE /* userStruct.swift */,
 				2EC6769B239326A500A075C1 /* RandomUserGeneratorViewController.swift */,
+				2E6EEC492396855D0095A0CE /* UserDetailViewController.swift */,
 			);
 			path = user;
 			sourceTree = "<group>";
@@ -96,10 +105,10 @@
 		2EC676A32394B3B800A075C1 /* color */ = {
 			isa = PBXGroup;
 			children = (
-				2EC67689239322C900A075C1 /* TheColorViewController.swift */,
-				2E82AA342394B61E00316AC8 /* colorStruct.swift */,
-				2E82AA362394B8C200316AC8 /* ColorDetailViewController.swift */,
 				2E82AA322394B5D500316AC8 /* color.json */,
+				2E82AA342394B61E00316AC8 /* colorStruct.swift */,
+				2EC67689239322C900A075C1 /* TheColorViewController.swift */,
+				2E82AA362394B8C200316AC8 /* ColorDetailViewController.swift */,
 			);
 			path = color;
 			sourceTree = "<group>";
@@ -108,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				2EC6769F2393370100A075C1 /* weather.json */,
-				2EC676992393265E00A075C1 /* WeatherAPIViewController.swift */,
 				2EC676A1239337CD00A075C1 /* weatherStruct.swift */,
+				2EC676992393265E00A075C1 /* WeatherAPIViewController.swift */,
 				2EC6769D2393297A00A075C1 /* DetailViewController.swift */,
 			);
 			path = weather;
@@ -176,6 +185,7 @@
 				2E82AA332394B5D500316AC8 /* color.json in Resources */,
 				2EC676A02393370100A075C1 /* weather.json in Resources */,
 				2EC67692239322CA00A075C1 /* LaunchScreen.storyboard in Resources */,
+				2E6EEC46239684FE0095A0CE /* randomUser.json in Resources */,
 				2EC6768F239322CA00A075C1 /* Assets.xcassets in Resources */,
 				2EC6768D239322C900A075C1 /* Main.storyboard in Resources */,
 			);
@@ -193,10 +203,12 @@
 				2EC6769C239326A500A075C1 /* RandomUserGeneratorViewController.swift in Sources */,
 				2EC676A2239337CD00A075C1 /* weatherStruct.swift in Sources */,
 				2EC6768A239322C900A075C1 /* TheColorViewController.swift in Sources */,
+				2E6EEC48239685170095A0CE /* userStruct.swift in Sources */,
 				2EC67686239322C900A075C1 /* AppDelegate.swift in Sources */,
 				2EC6769E2393297A00A075C1 /* DetailViewController.swift in Sources */,
 				2EC6769A2393265E00A075C1 /* WeatherAPIViewController.swift in Sources */,
 				2EC67688239322C900A075C1 /* SceneDelegate.swift in Sources */,
+				2E6EEC4A2396855D0095A0CE /* UserDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

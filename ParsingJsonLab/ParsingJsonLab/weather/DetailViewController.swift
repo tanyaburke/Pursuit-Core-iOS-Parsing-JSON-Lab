@@ -10,23 +10,18 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+      
+    @IBOutlet weak var tempLabel: UILabel!
+            @IBOutlet weak var desctiptionLabel: UILabel!
+    
+    
+    var city: CitiesWeather!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
     
-            @IBOutlet weak var tempLabel: UILabel!
-            @IBOutlet weak var desctiptionLabel: UILabel!
-            @IBOutlet weak var minTemp: UILabel!
-            @IBOutlet weak var maxTemp: UILabel!
-            
-            var city: City?
-            
-            override func viewDidLoad() {
-                super.viewDidLoad()
-                updateUI()
-
-                // Do any additional setup after loading the view.
-            }
+  
+        
             
             func updateUI() {
                 guard let theCity = city else {
@@ -34,10 +29,10 @@ class DetailViewController: UIViewController {
                 }
                 
                 navigationItem.title = theCity.name
-                tempLabel.text? = "\(theCity.main.temp)C ˚"
-                desctiptionLabel.text? = theCity.weather.first?.description.capitalized ?? "xyc"
-                minTemp.text = "Min Temp: \(theCity.main.temp_min)C ˚"
-                maxTemp.text = "Max Temp: \(theCity.main.temp_max)C ˚"
+                tempLabel.text? = "\(theCity.main.)C ˚"
+                desctiptionLabel.text? = theCity.weather.first?.description.capitalized ?? "ny"
+
             }
 
         }
+}

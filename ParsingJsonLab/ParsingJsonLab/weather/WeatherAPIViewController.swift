@@ -12,7 +12,7 @@ class WeatherAPIViewController: UIViewController {
 
      @IBOutlet weak var tableView: UITableView!
         
-        var cities = [CityWeather]() {
+        var cities = [CitiesWeather]() {
             didSet {
                 tableView.reloadData()
             }
@@ -34,7 +34,7 @@ class WeatherAPIViewController: UIViewController {
         }
 
         func loadData() {
-            cities = CityList.getcities
+            cities = getCities()
         }
 
 
